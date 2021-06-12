@@ -22,9 +22,6 @@ fps = arguments.fps
 frame_array = []
 files = [f for f in os.listdir(pathIn) if isfile(join(pathIn, f))]
 
-frame_array = []
-files = [f for f in os.listdir(pathIn) if isfile(join(pathIn, f))]
-
 files.sort(key = lambda x: x[5:-4])
 for i in tqdm(range(len(files))):
     filename=pathIn + "{}.png".format(i)
